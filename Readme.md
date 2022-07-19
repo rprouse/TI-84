@@ -10,7 +10,13 @@ Launch the Docker container from this directory,
 docker run --rm -v ${PWD}:/src -w /src -it rprouse/asm-dev
 ```
 
-Then compile using RASM,
+Then compile using make
+
+```sh
+make all
+```
+
+Or compile directly using RASM,
 
 ```sh
 spasm -E -T hello.asm hello.8xp
